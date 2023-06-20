@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valkyrie</title>
+    <script src="https://kit.fontawesome.com/1dce1d82d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="shortcut icon" href="img/icon2.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <div id="header">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Início</a>
+                <a href="pages/news.html">Notícias</a>
+                <div id="logoHeader">            
+                    <img src="img/Logo.png">
+                </div>
+                <a href="curiosidades.html">Curiosidades</a>
+                <div class="dropdownSeries">
+                    <button class="dropbtn">Séries<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="dropSContent">
+                        <a href="pages/yeollowjackets.html">Yelloowjackets</a>
+                        <a href="house-of-the-dragon.html">House of the Dragons</a>
+                        <a href="thesandman.html">The Sandman</a>
+                        <a href="tomorrow.html">Tomorrow</a>
+                        </a>
+                    </div>
+                </div><!--fim dropdown series-->
+                <a href="javascript:void(0);" class="icon" onclick="menuResponsivo()">
+                    <i class="fa-solid fa-bars"></i>    
+                </a>
+            </div>
+        </div> <!--fim header-->
+        <div class="content">
+            <div class="exibicao">
+                <div class="carrossel-container"> <!--primeira célula-->
+                    <div class="slides fade">
+                        <div class="carrossel-section">Série</div>
+                        <img src="img/index/series.jpg">
+                        <div class="carrossel-text">
+                           <a href="pages/yellowjackets.html">Yelloowjackets</a>
+                        </div>
+                    </div>
+                    <div class="slides fade">
+                        <div class="carrossel-section">Notícias</div>
+                        <img src="img/index/news.jpg">
+                        <div class="carrossel-text">
+                           <a href="pages/news.html">House of the Dragons: Inicio das Gravações na Espanha</a>
+                        </div>
+                    </div>
+                    <div class="slides fade">
+                        <div class="carrossel-section">Notícias</div>
+                        <img src="img/index/noticias.jpg">
+                        <div class="carrossel-text">
+                           <a href="pages/yellowjackets.html">House of the Dragons: Laenor Velaryon pode retornar</a>
+                        </div>
+                    </div>
+                    <div class="slides fade">
+                        <div class="carrossel-section">Curiosidades</div>
+                        <img src="img/index/curiosidades.jpg">
+                        <div class="carrossel-text">
+                           <a href="pages/yellowjackets.html">Yelloowjackets: Diário de Jackie já dava pistas do que iria acontecer com a personagem</a>
+                        </div>
+                    </div>
+                </div><!--fim carrossel-->
+                <div class="cont-ponto">
+                    <span class="ponto" onclick="currentSlide(1)"></span>
+                    <span class="ponto" onclick="currentSlide(2)"></span>
+                    <span class="ponto" onclick="currentSlide(3)"></span>
+                    <span class="ponto" onclick="currentSlide(4)"></span>
+                </div>
+                
+            </div><!--fim exibição-->
+        </div> <!--fim do content-->
+    </div> <!--fim main-->
+
+    <script>
+        function menuResponsivo(){
+    var x = document.getElementById("myTopnav");
+    if(x.className === "topnav"){
+        x.className += " responsive"
+    }else{
+        x.className = "topnav"
+    }
+}
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlide(n){
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+    let i;
+    let slides = document.getElementsByClassName('slides');
+    if(n > slides.length){
+        slideIndex = 1;
+    }
+
+    if(n < 1){
+        slideIndex = slides.length;
+    }
+
+    for(i = 0; i < slides.length; i++){
+        slides [i].style.display = 'none';
+    }
+
+    slides[slideIndex-1].style.display = 'block';
+    slides[slideIndex-1].className += ' active';
+}
+    </script>
+</body>
+</html>
