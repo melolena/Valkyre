@@ -203,11 +203,17 @@ body{
 
 #elenco{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin: auto;
     margin: 20px 0px;
     overflow: hidden;
+}
+
+.cast{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .actor{
