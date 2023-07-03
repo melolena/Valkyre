@@ -13,27 +13,34 @@
 <body>
     <div class="main">
         <div id="header">
-            <div class="topnav" id="myTopnav">
-                <a href="index.html" class="active">Início</a>
-                <a href="pages/news.html">Notícias</a>
-                <div id="logoHeader">            
+                <nav class="navbar navbar-expand-lg fixed-top rounded" aria-label="Eleventh navbar example">
                     <img src="img/Logo.png">
-                </div>
-                <a href="curiosidades.html">Curiosidades</a>
-                <div class="dropdownSeries">
-                    <button class="dropbtn">Séries<i class="fa-solid fa-chevron-down"></i></button>
-                    <div class="dropSContent">
-                        <a href="pages/yellowjackets.html">Yelloowjackets</a>
-                        <a href="house-of-the-dragon.html">House of the Dragons</a>
-                        <a href="thesandman.html">The Sandman</a>
-                        <a href="tomorrow.html">Tomorrow</a>
-                        </a>
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html">Valkyries</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+              
+                      <div class="collapse navbar-collapse" id="navbarsExample09">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Curiosidades</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Notícias</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Séries</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="pages/yellowjackets.html">Yelloowjackets</a></li>
+                              <li><a class="dropdown-item" href="#">House of the Dragons</a></li>
+                              <li><a class="dropdown-item" href="#">The Witcher</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                </div><!--fim dropdown series-->
-                <a href="javascript:void(0);" class="icon" onclick="menuResponsivo()">
-                    <i class="fa-solid fa-bars"></i>    
-                </a>
-            </div>
+                  </nav>
         </div> <!--fim header-->
         <div class="content">
             <div class="carrossel">
@@ -167,6 +174,7 @@
                     </div> <!-- fim quem somos-->
                     <div class="moreNews">
                         <h3>Últimas notícias</h3>
+                       <div class="body-news">
                         <div class="lastNews">
                             <a href="gravacoes-iniciadas-espanha.html">
                                 <img src="img/index/news.png">
@@ -185,16 +193,19 @@
                                 <label>House Of Dragons: Mudança na série pode indicar possível retorno do personagem</label>    
                             </a>
                         </div>
+                       </div>
                     </div><!--fim morenews-->
 
                     <div class="lastReview">
                         <h3>Últimas Resenhas</h3>
+                       <div class="body-review">
                         <div class="lastNews">
                             <a href="yellowjacketsep1s1.html">
-                                <img src="img/index/post1.jpg">
+                                <img src="img/index/post1h400.jpg">
                                 <label>Yelloowjackets: EP:1 T:1</label>    
                             </a>
                         </div>
+                       </div>
                     </div><!--fim lastreview-->
                 </div><!--fim part2-->
             </div> <!--fim publish-->
@@ -206,17 +217,6 @@
         </div> <!--fim footer-->
     </div> <!--fim main-->
 
-    <script>
-        function menuResponsivo(){
-    var x = document.getElementById("myTopnav");
-    if(x.className === "topnav"){
-        x.className += " responsive"
-    }else{
-        x.className = "topnav"
-    }
-}
-
-
-    </script>
+   
 </body>
 </html>

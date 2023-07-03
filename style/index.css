@@ -6,109 +6,31 @@ body{
 }
 
 /*header*/
-#header{    
-    width: 100%;
-    height: 15%;
-    margin: 0px;
-    display: flex;
-    background-color: #ffe3dc;
-    justify-content: center;
-}
 
-.topnav{
-    overflow: hidden;
-    width: 90%;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.014);
-}
-
-.topnav a{
-    display: block;
-    width: 130px;
-    color: #391463;
-    text-align: center;
-    font-family: 'Asap Condensed';
-    font-size: 20px;
-    font-weight: 600;
-    padding: 1px 10px;
-    margin: 0px 10px;
-    text-decoration: none;
-}
-
-.topnav img{
-    flex: 1;
-    margin: auto;
+.navbar img{
+    width: 15%;
     height: auto;
-    align-self: center;
-    width: 60%;
-    display: block;
 }
 
-.topnav .dropbtn{
-    font-size: 20px;
-    border: none;
-    font-family: 'Asap Condensed';
-    color: #391463;
-    outline: none;
-    margin-right: 20px;
-    padding: 1px 10px;
-    background-color: inherit;
-    margin: 0;
-}
-
-.dropSContent{
-    display: none;
-    position: absolute;
+.navbar{
     background-color: #ffe3dc;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
 }
 
-.dropdownSeries:hover  .dropSContent{
-    display: block;
-}
-
-
-.dropSContent a{
-    float: none;
+.container-fluid a{
     color: #391463;
-    padding: 5px;
-    display: block;
-    text-align: left;
+    font-family: 'Asap Condensed';
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
-.dropbtn i{
-    margin-left: 5px;
-    font-size: 15px;
-  }
-
-.dropSContent a:hover{
-    background-color: #738d8d;
-    color: white;
+.dropdown-menu ul{
+    background-color: #ffe3dc;
 }
 
-.topnav a.active{
-    background-color: #391463;
-    color: white;
-}
-
-.topnav a:hover, .dropdownSeries a:hover .dropbtn{
-    background-color: #ea526f;
-    color: #391463;
-}
-
-.topnav .icon{
-    display: none;
-}
 /*content*/
 .content{
     height: auto;
     width: 100%;
-    margin: 0;
+    margin-top: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,4 +308,87 @@ justify-content: center;
   color: #391463;
   margin: -5px 10px 10px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1025px) {
+    .part2 label{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 913px) {
+    .publish{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part1{
+        max-width: 100%;
+    }
+    
+    .part2{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        margin: auto;
+    }
+
+    .post{
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        border: none;
+        border-radius: 0%;
+        border-top:1px solid #39146369;
+        border-bottom: 1px solid #39146369;
+    }
+
+    .quemSomos{
+        max-width: 95%;
+        height: auto;
+        margin: auto;
+        border-radius: 0%;
+
+    }
+
+    .moreNews{
+        max-width: 95%;
+        margin: auto;
+    }
+
+    .body-news{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .lastNews {
+        width: 30%;
+        height: auto;
+    }
+
+    .lastReview{
+        max-width: 95%;
+        margin: auto;
+    }
+}
+
+@media  screen and (max-width:413px) {
+    .body-news{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lastNews{
+        width: 95%;
+        margin: auto;
+        align-self: center;
+        margin-bottom: 10px;
+    }
+    
 }
