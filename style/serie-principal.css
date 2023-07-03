@@ -22,10 +22,18 @@ body{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.dropdown-menu ul{
+.container-fluid a:hover{
+    color: #ea526f;
+}
+
+.navbar .dropdown-menu{
     background-color: #ffe3dc;
 }
 
+.nav-item a:hover, .dropdown-menu a:hover{
+    background-color: #ea526f;
+    color: white;
+}
 
 /*content*/
 .content{
