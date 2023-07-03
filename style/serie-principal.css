@@ -186,6 +186,7 @@ body{
     justify-content: center;
     flex-direction: column;
     margin-bottom: 15px;
+    max-width: 95%;
 }
 
 .video h2{
@@ -357,6 +358,13 @@ body{
         border-bottom: 1px solid #39146369;
     }
 
+    .cast{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .quemSomos{
         max-width: 95%;
         height: auto;
@@ -384,6 +392,12 @@ body{
     .lastReview{
         max-width: 95%;
         margin: auto;
+    }
+
+    .body-review{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
