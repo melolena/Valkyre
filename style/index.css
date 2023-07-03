@@ -40,8 +40,8 @@ body{
 /*carrossel*/
 
 .carrossel img{ 
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     object-fit: cover;
     margin: 15px 0px;
 }
@@ -57,7 +57,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
