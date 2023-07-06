@@ -26,7 +26,6 @@ body{
     color: #ea526f;
 }
 
-
 .navbar .dropdown-menu{
     background-color: #ffe3dc;
 }
@@ -138,7 +137,6 @@ body{
     color: #738d8d;
     margin: 10px 0px 5px 0px;
 }
-
 
 .titlePostReview{
     display: flex;
@@ -292,7 +290,7 @@ body{
 
 .footer{
 width: 100%;
-height: 30%;
+height: 20%;
 margin: 0;
 background-color: #ffe3dc;
 padding: 20px 0px;
@@ -343,9 +341,21 @@ justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         max-width: 100%;
-        height: auto;
         padding: 0;
         margin: auto;
+    }
+
+    .content h2{
+        font-size: 1.4rem;
+    }
+
+    .titlePostReview i{
+        font-size: 1rem;
+        align-self: center;
+    }
+
+    .content p{
+        font-size: 1.3rem;
     }
 
     .post{
@@ -358,47 +368,22 @@ justify-content: center;
         border-bottom: 1px solid #39146369;
     }
 
+    .post p{
+        font-size: 1.3rem;
+    }
+
     .quemSomos{
         max-width: 95%;
         height: auto;
         margin: auto;
         border-radius: 0%;
-
     }
 
-    .moreNews{
-        max-width: 95%;
-        margin: auto;
-    }
-
-    .body-news{
+    .footer{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
     }
 
-    .lastNews {
-        width: 30%;
-        height: auto;
-    }
-
-    .lastReview{
-        max-width: 95%;
-        margin: auto;
-    }
 }
 
-@media  screen and (max-width:413px) {
-    .body-news{
-        display: flex;
-        flex-direction: column;
-    }
 
-    .lastNews{
-        width: 95%;
-        margin: auto;
-        align-self: center;
-        margin-bottom: 10px;
-    }
-    
-}
