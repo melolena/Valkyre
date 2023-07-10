@@ -34,7 +34,6 @@ body{
     background-color: #ea526f;
     color: white;
 }
-
 /*content*/
 .content{
     width: 100%;
@@ -45,7 +44,6 @@ body{
     justify-content: center;
 }
 
-/*colunas*/
 .publish{
     width: 100%;
     height: auto;
@@ -73,26 +71,15 @@ body{
     padding-right: 15px;
 }
 
-
-
-.focus{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+/*conteúdo*/
+.part1 img{
+    width: 95%;
     height: auto;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20%;
-}
-
-.focus img{
-    width: 70%;
-    height: 50%;
     margin: 15px 0px;
     align-self: center;
 }
 
-.focus h1{
+.part1 h1{
     font-family: 'League Gothic';
     font-size: 35px;
     font-weight: 600;
@@ -101,66 +88,7 @@ body{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#title-focus{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 5px;
-}
-
-#title-focus i{
-    font-size: 32px;
-    color: #391463;
-    margin: 0px 5px;
-}
-
-#subtitle-focus{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-self:normal;
-    margin: 15px 0px;
-}
-
-#subtitle-focus h4{
-    font-family: 'League Spartan';
-    font-size: 20px;
-    font-weight: 600;
-    color: #ea526f;
-    margin: auto;
-}
-
-#viewNow{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-#viewNow button{
-    font-size: 20px;
-    border: none;
-    font-family: 'Asap Condensed';
-    color: white;
-    outline: none;
-    font-weight: 400;
-    margin-right: 20px;
-    padding: 1px 10px;
-    background-color: #ea526f;
-    margin: 15px 0;
-    align-self: center;
-}
-
-#viewNow button:hover{
-    background-color: #391463;
-}
-
-.focus i{
-    margin: 0 3px;
-}
-
-
-.post p{
+.part1 p {
     font-family: 'League Spartan';
     width: 100%;
     height: auto;
@@ -169,110 +97,6 @@ body{
     font-weight: 400;
     text-align: justify;
     margin: 20px 10px 20px;
-}
-
-/*carrossel*/
-#elenco{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
-
-#elenco h4{
-    color: #ea526f;
-    font-family: 'League Gothic';
-    font-size: 26px;
-}
-
-.cast{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.actor{
-    width: 20%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.actor img{
-    width: 100%;
-    height: auto;
-}
-
-.actor a{
-    text-decoration: none;
-    font-family: 'Asap Condensed';
-    color: black;
-    text-align: center;
-}
-
-.actor:hover h6{
-    background-color: #ea526f;
-    color: white;
-}
-
-.video{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 15px;
-    max-width: 95%;
-}
-
-.video h2{
-    font-family: 'League Gothic';
-    font-size: 30px;
-    color: #ea526f;
-}
-
-.moreInfo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 20px 0px;
-}
-
-.moreInfo button,
-.moreInfo button:active{
-    background-color: #391463;
-    color: white;
-    font-family: "League Gothic";
-    font-size: 25px;
-    padding: 15px;
-}
-
-.moreInfo button:hover{
-    background-color: #ea526f;
-    color: white;
-}
-
-.info h1{
-    font-family: 'League Spartan';
-    color: #ea526f;
-    font-size: 22px;
-}
-
-.info ul{
-    color: #738d8d;
-}
-
-.info a{
-    text-decoration: none;
-    font-family: 'League Spartan';
-    color: black;
-    font-size: 18px;
-}
-
-.accordion button{
-    background-color:#391463;
-    color: white;
 }
 
 /*part2*/
@@ -427,20 +251,8 @@ body{
         margin: auto;
     }
 
-    #title-focus h1{
-        font-size: 1.3rem;
-    }
 
-    #title-focus i{
-        font-size: 0.9rem;
-        margin: 2px 2px 0px;
-    }
-
-    #subtitle-focus h4{
-        font-size: 1.2rem;
-    }
-
-    .post{
+    .part1{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -451,7 +263,11 @@ body{
         border-bottom: 1px solid #39146369;
     }
 
-    .post p{
+    .part1 h1{
+        font-size: 1.3rem;
+    }
+
+    .part1 p{
         font-size: 1.3rem;
     }
 
@@ -493,5 +309,4 @@ body{
     }
     
 }
-
 
