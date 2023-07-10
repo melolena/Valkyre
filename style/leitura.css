@@ -99,6 +99,21 @@ body{
     margin: 20px 10px 20px;
 }
 
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+    max-width: 95%;
+}
+
+.video h2{
+    font-family: 'League Gothic';
+    font-size: 30px;
+    color: #ea526f;
+}
+
 /*part2*/
 
 .quemSomos{
