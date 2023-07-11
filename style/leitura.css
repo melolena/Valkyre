@@ -56,6 +56,7 @@ body{
 .part1{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: auto;
     max-width: 68%;
     height: auto;
@@ -96,23 +97,156 @@ body{
     font-size: 20px;
     font-weight: 400;
     text-align: justify;
-    margin: 20px 10px 20px;
+    margin: auto;
 }
 
-.video{
+
+.focus{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.focus img{
+    width: 70%;
+    height: 50%;
+    margin: 15px 0px;
+    align-self: center;
+}
+
+.focus h1{
+    font-family: 'League Gothic';
+    font-size: 35px;
+    font-weight: 600;
+    color: #391463;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#title-focus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#title-focus i{
+    font-size: 32px;
+    color: #391463;
+    margin: 0px 5px;
+}
+
+#subtitle-focus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self:normal;
+    margin: 15px 0px;
+}
+
+#subtitle-focus h4{
+    font-family: 'League Spartan';
+    font-size: 20px;
+    font-weight: 600;
+    color: #ea526f;
+    margin: auto;
+}
+
+#viewNow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#viewNow button{
+    font-size: 20px;
+    border: none;
+    font-family: 'Asap Condensed';
+    color: white;
+    outline: none;
+    font-weight: 400;
+    margin-right: 20px;
+    padding: 1px 10px;
+    background-color: #ea526f;
+    margin: 15px 0;
+    align-self: center;
+}
+
+#viewNow button:hover{
+    background-color: #391463;
+}
+
+.focus i{
+    margin: 0 3px;
+}
+
+#elenco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+#elenco h4{
+    color: #ea526f;
+    font-family: 'League Gothic';
+    font-size: 26px;
+}
+
+.cast{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.actor{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.actor img{
+    width: 100%;
+    height: auto;
+}
+
+.actor a{
+    text-decoration: none;
+    font-family: 'Asap Condensed';
+    color: black;
+    text-align: center;
+}
+
+.actor:hover h6{
+    background-color: #ea526f;
+    color: white;
+}
+
+.video {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 15px;
-    max-width: 95%;
-}
-
-.video h2{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  
+  .video h2 {
     font-family: 'League Gothic';
     font-size: 30px;
     color: #ea526f;
-}
+  }
+
 
 /*part2*/
 
