@@ -108,11 +108,11 @@ body{
     height: auto;
     flex-direction: column;
     align-items: center;
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 .focus img{
-    width: 70%;
+    width: 65%;
     height: 50%;
     margin: 15px 0px;
     align-self: center;
@@ -244,6 +244,25 @@ body{
   .video h2 {
     font-family: 'League Gothic';
     font-size: 30px;
+    color: #ea526f;
+  }
+
+  .paginacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+
+  .paginacao button{
+    color: #391463;
+    font-size: 35px;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+  }
+
+  .paginacao button:hover{
     color: #ea526f;
   }
 
@@ -414,6 +433,11 @@ body{
 
     .part1 h1{
         font-size: 1.3rem;
+    }
+
+    #title-focus i{
+        font-size: 1.2rem;
+        margin: 10px 2px;
     }
 
     .part1 p{
