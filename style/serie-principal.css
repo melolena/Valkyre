@@ -203,6 +203,7 @@ body{
     height: auto;
     display: flex;
     flex-direction: column;
+    margin: 10px 5px;
 }
 
 .actor img{
