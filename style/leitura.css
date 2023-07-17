@@ -56,7 +56,7 @@ body{
 .part1{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     margin: auto;
     max-width: 68%;
     height: auto;
@@ -112,7 +112,7 @@ body{
 }
 
 .focus img{
-    width: 65%;
+    width: 60%;
     height: 50%;
     margin: 15px 0px;
     align-self: center;
@@ -161,6 +161,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 #viewNow button{
@@ -211,6 +212,7 @@ body{
     height: auto;
     display: flex;
     flex-direction: column;
+    margin: 10px 5px;
 }
 
 .actor img{
@@ -235,7 +237,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin: 15px 0px;
     max-width: 100%;
     height: auto;
     text-align: center;
@@ -244,6 +246,8 @@ body{
   .video h2 {
     font-family: 'League Gothic';
     font-size: 30px;
+    margin: 10px 0px;
+    margin-bottom: 10px;
     color: #ea526f;
   }
 
@@ -251,7 +255,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 0;
+    margin: 20px 0;
   }
 
   .paginacao button{
