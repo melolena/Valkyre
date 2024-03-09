@@ -8,7 +8,7 @@ body{
 /*header*/
 
 .navbar img{
-    width: 15%;
+    width: 10%;
     height: auto;
 }
 
@@ -38,7 +38,7 @@ body{
 .content{
     width: 100%;
     height: 80%;
-    margin-top: 20%;
+    margin-top: 12%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +65,7 @@ body{
 .part2{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: top;
     margin-right: 10px;
     max-width: 25%;
     height: auto;
@@ -76,12 +76,13 @@ body{
 .part1 img{
     width: 80%;
     height: auto;
-    margin: 15px 0px;
+    margin: 10px 0px;
     align-self: center;
 }
 
 .part1 h1{
     font-family: 'League Gothic';
+    margin-top: 10px;
     font-size: 35px;
     font-weight: 600;
     color: #391463;
@@ -108,12 +109,11 @@ body{
     height: auto;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
 }
 
 .focus img{
-    width: 60%;
-    height: 50%;
+    width: 58%;
+    height: 48%;
     margin: 15px 0px;
     align-self: center;
 }
@@ -299,70 +299,6 @@ body{
     margin: 5px 5px 15px 5px;
 }
 
-.part2 h3{
-    font-family: 'League Gothic';
-    font-size: 28px;
-    color: #391463;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.moreNews{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 20px 0px;
-    height: auto;
-}
-
-
-.lastNews{
-    position: relative;
-    display: inline-block;
-    margin: 30px 0px;
-}
-
-.lastNews img{
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-}
-
-.lastNews a{
-    display: block;
-    text-decoration: none;
-}
-
-.lastNews label{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: justify;
-    color: whitesmoke;
-    font-family: 'League Spartan'; 
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0px 7px 5px;   
-    -webkit-text-stroke-width: 0.2px;
-    -webkit-text-stroke-color: #391463;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.lastNews:hover label{
-    background-color: #39146369;
-    animation: fade;
-    animation-duration: 1.5s;
-}
-
-.lastReview{
-    margin: 30px 0px;
-}
-
-.lastReview a{
-    text-align: center;
-}
-
-
 /*footer*/
 .footer{
     width: 100%;
@@ -394,10 +330,31 @@ body{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
 @media screen and (max-width: 1025px) {
-    .part2 label{
-        font-size: 1rem;
+    .part1 h1{
+        margin: 12% 0 2%;
+    }
+
+    .part1 p{
+        font-size: 1.3rem;
+        margin: 10px 2px 5px 3px;
+    }
+    
+    .content{
+        margin-top: 11%;
+    }
+
+    .cast{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    .actor{
+        width:15%;
+        margin: 15px;
     }
 }
 
@@ -408,13 +365,13 @@ body{
     }
 
     .part1{
-        max-width: 100%;
+        max-width: 95%;
     }
     
     .part2{
         display: flex;
         flex-direction: column;
-        justify-content:space-between;
+        justify-content:center;
         align-items: center;
         flex-wrap: wrap;
         max-width: 100%;
@@ -428,7 +385,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 95%;
+        width: 100%;
         border: none;
         border-radius: 0%;
         border-top:1px solid #39146369;
@@ -437,6 +394,11 @@ body{
 
     .part1 h1{
         font-size: 1.3rem;
+        margin:17% 0 2%;
+    }
+
+    .focus{
+        margin-top: 15%;
     }
 
     #title-focus i{
@@ -444,40 +406,12 @@ body{
         margin: 10px 2px;
     }
 
-    .part1 p{
-        font-size: 1.3rem;
-    }
-
-    .cast{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
+    
     .quemSomos{
         max-width: 95%;
         height: auto;
-        margin: auto;
+        margin: 20px 0pc 20px;
         border-radius: 0%;
-
-    }
-
-    .moreNews{
-        max-width: 95%;
-        margin: auto;
-    }
-
-    .body-news, .body-review{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .lastNews{
-        width: 95%;
-        margin: auto;
-        align-self: center;
-        margin-bottom: 10px;
     }
 
     .footer{
